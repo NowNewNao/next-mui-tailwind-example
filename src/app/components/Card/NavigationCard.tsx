@@ -4,14 +4,19 @@ import React, { FC } from 'react';
 import { Card, CardActionArea, CardContent } from '@mui/material';
 import {
   StyledNavigationCard,
+  StyledNavigationCardDescription,
   StyledNavigationCardTitle,
 } from '@/app/components/Card/NavigationCard.styled';
 
 type NavigationCardProps = {
   title: string;
+  description: string;
 };
 
-export const NavigationCard: FC<NavigationCardProps> = ({ title }) => (
+export const NavigationCard: FC<NavigationCardProps> = ({
+  title,
+  description,
+}) => (
   <StyledNavigationCard>
     <CardActionArea>
       <CardContent>
@@ -21,6 +26,9 @@ export const NavigationCard: FC<NavigationCardProps> = ({ title }) => (
             -&gt;
           </span>
         </StyledNavigationCardTitle>
+        <StyledNavigationCardDescription>
+          {description}
+        </StyledNavigationCardDescription>
       </CardContent>
     </CardActionArea>
   </StyledNavigationCard>

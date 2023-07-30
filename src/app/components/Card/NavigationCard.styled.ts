@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Card } from '@mui/material';
-import { fontSizes, spacings } from '@/app/styles';
+import { fontSizes, opacities, spacings } from '@/app/styles';
 
 export const StyledNavigationCard = styled(Card)`
   border: 1px solid transparent;
@@ -25,4 +25,11 @@ export const StyledNavigationCardTitle = styled.h2`
   margin-bottom: ${spacings.md};
   font-size: ${fontSizes.title};
   font-weight: 600;
+`;
+
+export const StyledNavigationCardDescription = styled.p`
+  margin: 0;
+  max-width: 30ch;
+  font-size: ${fontSizes.description};
+  opacity: ${opacities.middle};
 `;

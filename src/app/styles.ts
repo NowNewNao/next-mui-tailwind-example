@@ -12,3 +12,9 @@ export const fontSizes = {
   base: '16px',
   title: '24px',
 };
+
+export const opacities = {
+  low: '0.3',
+  middle: '0.5',
+  high: '0.8',
+};
