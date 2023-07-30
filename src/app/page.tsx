@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { Card, CardActionArea, CardContent, Typography } from '@mui/material';
+import { NavigationCard } from '@/app/components/Card/NavigationCard';
 
 export default function Home() {
   return (
@@ -40,6 +42,11 @@ export default function Home() {
       </div>
 
       <div className='mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left'>
+        <NavigationCard
+          title='Docs'
+          description=' Find in-depth information about Next.js features and API.'
+        />
+
         <a
           href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
           className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
