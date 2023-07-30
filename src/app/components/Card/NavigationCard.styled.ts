@@ -23,6 +23,6 @@ export const StyledNavigationCard = styled(Card)`
 
 export const StyledNavigationCardTitle = styled.h2`
   margin-bottom: ${spacings.md};
-  font-size: ${fontSizes.lg};
+  font-size: ${fontSizes.title};
   font-weight: 600;
 `;
